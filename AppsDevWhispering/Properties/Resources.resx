@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RoomBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiniBar2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiniBar2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treeHouseEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treeHouseEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="explorePic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explorePic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendarDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendarDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pool1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pool1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProfileButtonWhite (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProfileButtonWhite (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WatchTowerEXPnew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WatchTowerEXPnew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dive2Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dive2Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divereceipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divereceipt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbEditInfoForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbEditInfoForm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdatesBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdatesBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snorklingClip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snorklingClip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingPackage3Cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingPackage3Cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dive2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dive2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feedMonkeyEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feedMonkeyEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalFishBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalFishBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Diving2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Diving2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pingpong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pingpong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoUpdatesPanel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoUpdatesPanel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingPackage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingPackage2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="biking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\biking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rooms2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rooms2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="billiardsEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\billiardsEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diving" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diving.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalPizza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalPizza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feedBirdsEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feedBirdsEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fiveHouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fiveHouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbLandActivitiesLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbLandActivitiesLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roomsPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roomsPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingPackage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingPackage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pool3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pool3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DivingInfoBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivingInfoBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="darts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\darts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snakeEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snakeEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newGolf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newGolf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back2-transformed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back2-transformed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="turtleEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turtleEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smallTreeLogoUpdates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smallTreeLogoUpdates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sipawayEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sipawayEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dive3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dive3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dive3Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dive3Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dive3Edit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dive3Edit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DiningInfoBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DiningInfoBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdatesHomeLongPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdatesHomeLongPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalSizzlers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalSizzlers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backy-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backy-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendarWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendarWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalKayakGIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalKayakGIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gymEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gymEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalPlatterBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalPlatterBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deer2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deer2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CalendarDetailsPic (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CalendarDetailsPic (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbChangePasswordForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbChangePasswordForm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="islandHoppingFinalEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\islandHoppingFinalEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunConureEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sunConureEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="budgiesEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\budgiesEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="interactSnowbiEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\interactSnowbiEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="islandHoppingClip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\islandHoppingClip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingPackage1cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingPackage1cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bungalow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bungalow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiniBarEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiniBarEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="islandEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\islandEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Activities2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Activities2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="island" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\island.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalDesserts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalDesserts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DivingInfoBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivingInfoBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loveBirdsEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loveBirdsEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkeyEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkeyEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalwaterspaortsGIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalwaterspaortsGIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lories" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lories.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnProfileTransactionBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnProfileTransactionBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DagatwithFishGIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DagatwithFishGIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pricePic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pricePic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbMinizooLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbMinizooLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbProfilePicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbProfilePicture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodile2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodile2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalPbDiningLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalPbDiningLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingPackage2Cover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingPackage2Cover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standardRoomEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\standardRoomEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playgroundEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playgroundEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eguanaEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eguanaEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spa2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spa2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dartsEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dartsEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newBikingEdit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBikingEdit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingFinalReceipt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingFinalReceipt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pool1Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pool1Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuestInfoBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuestInfoBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DashboardBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DashboardBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="firedanceEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firedanceEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standardRoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\standardRoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnProfileTransaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnProfileTransaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ActivitiesEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ActivitiesEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="swimmingPool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\swimmingPool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodileEdit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodileEdit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diningDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diningDescription.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newGolfEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newGolfEdit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miniZoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\miniZoo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feedCrocodileEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feedCrocodileEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dive1Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dive1Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuestInfoBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuestInfoBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newBiking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBiking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deerEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deerEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="whisperingLogoAdmin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whisperingLogoAdmin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kayakingFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kayakingFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnProfileMyprofile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnProfileMyprofile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WatchTowerEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WatchTowerEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cacaduEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cacaduEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Final Size (1190 x 100 px)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Final Size (1190 x 100 px).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProfileButtonWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProfileButtonWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomsEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomsEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kayak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kayak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="footNote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\footNote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FinalLandActivities" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FinalLandActivities.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="billiards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\billiards.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profile-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbProfileInfoDisplay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbProfileInfoDisplay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bikingEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bikingEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingEdit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loriesEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loriesEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contactPanel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contactPanel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalDivingGIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalDivingGIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pool2Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pool2Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badminton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\badminton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdatesButtonWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdatesButtonWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="archeryEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\archeryEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HomeScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeScreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fiveHousesEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fiveHousesEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snorklingFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snorklingFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cockateilEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cockateilEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lastRooms" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lastRooms.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodileEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodileEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DiningInfoBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DiningInfoBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minigolfEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minigolfEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newArcheryEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newArcheryEdit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volleyball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volleyball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbRoomsLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbRoomsLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LActNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LActNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnProfileLogoutBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnProfileLogoutBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pigEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pigEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tapal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tapal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="updateSidePanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\updateSidePanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomDetailsPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomDetailsPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kayakLandAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kayakLandAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diving package" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diving package.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feedBirds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feedBirds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maxPersonsPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxPersonsPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="archery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\archery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DivingEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DivingEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KayakingClip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KayakingClip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingFinalReceipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingFinalReceipt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkey2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkey2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoutBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoutBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cockateil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cockateil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DashboardBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DashboardBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pblefttt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pblefttt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dive1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dive1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chessEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chessEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newBikingEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBikingEdit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roomDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roomDescription.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snorklingFinalEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snorklingFinalEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhisperingLogoAnimation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhisperingLogoAnimation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbProfileIconTransparent1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbProfileIconTransparent1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beachEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beachEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="footNote1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\footNote1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpaEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpaEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="roomsBackgroundPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\roomsBackgroundPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restaurant2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restaurant2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pool3Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pool3Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReviewsButtonWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReviewsButtonWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingFinalEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingFinalEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="whisperingLogoSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whisperingLogoSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="islandHoppingFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\islandHoppingFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cacadu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cacadu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalPorkBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalPorkBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treeHouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treeHouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkeyEdit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkeyEdit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="interactSnowbi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\interactSnowbi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loveBirds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loveBirds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingLandAct" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingLandAct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eguana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eguana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="turtle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\turtle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kayakLandActGIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kayakLandActGIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backback-transformed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backback-transformed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoutBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoutBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WelcometoWhisperingPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WelcometoWhisperingPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volleyballEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volleyballEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingLandActGIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingLandActGIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbWatersportsLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbWatersportsLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contactPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contactPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crocodile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crocodile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snorkeling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snorkeling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kayakingFinalEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kayakingFinalEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contact" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BeachEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BeachEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReviewsButtonBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReviewsButtonBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feedMonkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feedMonkey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LandActActivitiesHome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LandActActivitiesHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koiEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koiEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pingpongEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pingpongEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gym" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gym.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbExperienceLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbExperienceLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="relaxanddiscover2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\relaxanddiscover2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bungalowEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bungalowEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RestaurantEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RestaurantEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newArcheryEdit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newArcheryEdit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snorklingEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snorklingEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingPackage31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingPackage31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DetailPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunConure" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sunConure.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="badmintonEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\badmintonEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalSpecials" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalSpecials.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomBtnHover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomBtnHover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingClip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingClip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbProfileIconTransparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbProfileIconTransparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingPackage3Cover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingPackage3Cover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnProfileMyprofileBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnProfileMyprofileBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minigolf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minigolf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbProfileInformation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbProfileInformation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newGolfEdit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newGolfEdit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FinalWaterSports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FinalWaterSports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdatesButtonBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdatesButtonBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kayakEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kayakEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fivehouses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fivehouses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newArchery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newArchery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnProfileLogout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnProfileLogout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deerEdit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deerEdit2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feedCrocodile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feedCrocodile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalInternational" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalInternational.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="divingPackage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\divingPackage3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SignUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiniZooEXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiniZooEXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalCocktailsBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalCocktailsBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WatchTower2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WatchTower2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beach2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beach2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waterReceipt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waterReceipt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fiveHouseEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fiveHouseEdit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admingLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admingLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pool2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pool2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CalendarBookingIntro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CalendarBookingIntro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbTop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CircleProfile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CircleProfile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="firedance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firedance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="budgies" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\budgies.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waterSports1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waterSports1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiniZoo2EXP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiniZoo2EXP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sipaway" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sipaway.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalSnacksBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finalSnacksBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pbActivitiesLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pbActivitiesLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UpdatesBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UpdatesBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="financeSquarePic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\financeSquarePic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beach.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="swimmingPoolEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\swimmingPoolEdit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DiveBookBtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DiveBookBtn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DiveBookBtnHover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DiveBookBtnHover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FoodBookBtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FoodBookBtn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FoodBookBtnHover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FoodBookBtnHover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomBookBtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomBookBtn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoomBookBtnHover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoomBookBtnHover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TransactionBtn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TransactionBtn1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TransactionBtnHover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TransactionBtnHover1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

@@ -1,0 +1,1496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFC4AD2F-A927-4D0D-A363-AA7F57B03A60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AppsDevWhispering</RootNamespace>
+    <AssemblyName>AppsDevWhispering</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>D:\buttons\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DnsClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>..\packages\DnsClient.1.7.0\lib\net471\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActivityForm.Designer.cs">
+      <DependentUpon>ActivityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRoomsForm.Designer.cs">
+      <DependentUpon>AdminRoomsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdateDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdateDetails.Designer.cs">
+      <DependentUpon>AdminUpdateDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdatesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdatesEdit.Designer.cs">
+      <DependentUpon>AdminUpdatesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvailableRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailableRooms.Designer.cs">
+      <DependentUpon>AvailableRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarForm.Designer.cs">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDiningBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDiningBooking.Designer.cs">
+      <DependentUpon>AdminDiningBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDiningInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDiningInfo.Designer.cs">
+      <DependentUpon>AdminDiningInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDivingBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDivingBooking.Designer.cs">
+      <DependentUpon>AdminDivingBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDivingInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDivingInfo.Designer.cs">
+      <DependentUpon>AdminDivingInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditGuestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEditGuestForm.Designer.cs">
+      <DependentUpon>AdminEditGuestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEditRoomDetails.Designer.cs">
+      <DependentUpon>AdminEditRoomDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmationReceiptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmationReceiptForm.Designer.cs">
+      <DependentUpon>ConfirmationReceiptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiningHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiningHomeForm.Designer.cs">
+      <DependentUpon>DiningHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiningTransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiningTransactionForm.Designer.cs">
+      <DependentUpon>DiningTransactionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DivingFinalReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivingFinalReceipt.Designer.cs">
+      <DependentUpon>DivingFinalReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DivingReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivingReceipt.Designer.cs">
+      <DependentUpon>DivingReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DivingTransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DivingTransactionForm.Designer.cs">
+      <DependentUpon>DivingTransactionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInformationForm.Designer.cs">
+      <DependentUpon>EditInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Experience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Experience.Designer.cs">
+      <DependentUpon>Experience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinanceAdmin.Designer.cs">
+      <DependentUpon>FinanceAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGuestInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGuestInfo.Designer.cs">
+      <DependentUpon>AdminGuestInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePriceFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePriceFood.Designer.cs">
+      <DependentUpon>ChangePriceFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroAnimation.Designer.cs">
+      <DependentUpon>IntroAnimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandActivities.Designer.cs">
+      <DependentUpon>LandActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAdminForm.Designer.cs">
+      <DependentUpon>MainAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuRestaurantFINAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuRestaurantFINAL.Designer.cs">
+      <DependentUpon>MenuRestaurantFINAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniZooForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniZooForm.Designer.cs">
+      <DependentUpon>MiniZooForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileDashboardForm.Designer.cs">
+      <DependentUpon>ProfileDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileInformationForm.Designer.cs">
+      <DependentUpon>ProfileInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiptForm.Designer.cs">
+      <DependentUpon>ReceiptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewsForm.Designer.cs">
+      <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdminRoomBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRoomBooking.Designer.cs">
+      <DependentUpon>AdminRoomBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomBookingForm.Designer.cs">
+      <DependentUpon>RoomBookingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomReceiptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomReceiptForm.Designer.cs">
+      <DependentUpon>RoomReceiptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUpForm.Designer.cs">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJButtons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomsForm.Designer.cs">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminTransactionForm.Designer.cs">
+      <DependentUpon>AdminTransactionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUpdatesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUpdatesForm.Designer.cs">
+      <DependentUpon>AdminUpdatesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewGueatTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewGueatTransaction.Designer.cs">
+      <DependentUpon>AdminViewGueatTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewGuestTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewGuestTransaction.Designer.cs">
+      <DependentUpon>AdminViewGuestTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewRoomDetails.Designer.cs">
+      <DependentUpon>AdminViewRoomDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionsForm.Designer.cs">
+      <DependentUpon>TransactionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatedPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatedPasswordForm.Designer.cs">
+      <DependentUpon>UpdatedPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatesForm.Designer.cs">
+      <DependentUpon>UpdatesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatesMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatesMainForm.Designer.cs">
+      <DependentUpon>UpdatesMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaterSportsActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaterSportsActivities.Designer.cs">
+      <DependentUpon>WaterSportsActivities.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActivityForm.resx">
+      <DependentUpon>ActivityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRoomsForm.resx">
+      <DependentUpon>AdminRoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdateDetails.resx">
+      <DependentUpon>AdminUpdateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdatesEdit.resx">
+      <DependentUpon>AdminUpdatesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvailableRooms.resx">
+      <DependentUpon>AvailableRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDiningBooking.resx">
+      <DependentUpon>AdminDiningBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDiningInfo.resx">
+      <DependentUpon>AdminDiningInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDivingBooking.resx">
+      <DependentUpon>AdminDivingBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDivingInfo.resx">
+      <DependentUpon>AdminDivingInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEditGuestForm.resx">
+      <DependentUpon>AdminEditGuestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEditRoomDetails.resx">
+      <DependentUpon>AdminEditRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmationReceiptForm.resx">
+      <DependentUpon>ConfirmationReceiptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiningHomeForm.resx">
+      <DependentUpon>DiningHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiningTransactionForm.resx">
+      <DependentUpon>DiningTransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DivingFinalReceipt.resx">
+      <DependentUpon>DivingFinalReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DivingReceipt.resx">
+      <DependentUpon>DivingReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DivingTransactionForm.resx">
+      <DependentUpon>DivingTransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInformationForm.resx">
+      <DependentUpon>EditInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Experience.resx">
+      <DependentUpon>Experience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinanceAdmin.resx">
+      <DependentUpon>FinanceAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePriceFood.resx">
+      <DependentUpon>ChangePriceFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGuestInfo.resx">
+      <DependentUpon>AdminGuestInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroAnimation.resx">
+      <DependentUpon>IntroAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandActivities.resx">
+      <DependentUpon>LandActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainAdminForm.resx">
+      <DependentUpon>MainAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRoomBooking.resx">
+      <DependentUpon>AdminRoomBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuRestaurantFINAL.resx">
+      <DependentUpon>MenuRestaurantFINAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniZooForm.resx">
+      <DependentUpon>MiniZooForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileDashboardForm.resx">
+      <DependentUpon>ProfileDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileInformationForm.resx">
+      <DependentUpon>ProfileInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptForm.resx">
+      <DependentUpon>ReceiptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewsForm.resx">
+      <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomBookingForm.resx">
+      <DependentUpon>RoomBookingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomReceiptForm.resx">
+      <DependentUpon>RoomReceiptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUpForm.resx">
+      <DependentUpon>SignUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RoomsForm.resx">
+      <DependentUpon>RoomsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminTransactionForm.resx">
+      <DependentUpon>AdminTransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUpdatesForm.resx">
+      <DependentUpon>AdminUpdatesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewGueatTransaction.resx">
+      <DependentUpon>AdminViewGueatTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewGuestTransaction.resx">
+      <DependentUpon>AdminViewGuestTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewRoomDetails.resx">
+      <DependentUpon>AdminViewRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionsForm.resx">
+      <DependentUpon>TransactionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatedPasswordForm.resx">
+      <DependentUpon>UpdatedPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatesForm.resx">
+      <DependentUpon>UpdatesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatesMainForm.resx">
+      <DependentUpon>UpdatesMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterSportsActivities.resx">
+      <DependentUpon>WaterSportsActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explorePic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diving.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingEdit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiveHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiveHouseEdit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swimmingPool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swimmingPoolEdit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bungalow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bungalowEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roomsBackgroundPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roomsPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standardRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standardRoomEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeHouseEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bahayKubo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bungalow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deluxeRoom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FamilyDeluxeRoom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniKubo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roomDescription.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standardRoom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standardRoomPlus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treeHouse1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\footNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\footNote1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admingLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BahayKuboBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bungalowBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeluxeBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FamilyDeluxeRoomBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniKuboBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StandardRoomBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StandardRoomPlusBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TreeHouseBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookingCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarDark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendarWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\introBookingPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarDetailsPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarDetailsPic %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarBookingIntro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DashboardBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DashboardBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DetailPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiningInfoBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiningInfoBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiveBookBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiveBookBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DivingInfoBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DivingInfoBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financeSquarePic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodBookBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodBookBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GuestInfoBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GuestInfoBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomBookBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomBookBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TransactionBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TransactionBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdatesBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdatesBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whisperingLogoAdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoutBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoutBtnHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Activities2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActivitiesEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archeryEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badminton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badmintonEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beach2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beachEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BeachEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bikingEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billiards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billiardsEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\budgies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\budgiesEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cacadu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cacaduEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chessEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CircleProfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cockateil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cockateilEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodile2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodileEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crocodileEdit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DagatwithFishGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dartsEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deerEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deerEdit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dive1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dive1Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dive2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dive2Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dive3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dive3Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dive3Edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divereceipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diving package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diving2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingClip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DivingEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingFinalEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingFinalReceipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingLandAct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingLandActGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingPackage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingPackage1cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingPackage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingPackage2Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingPackage3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingPackage3Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingPackage3Cover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingPackage31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eguana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eguanaEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedBirds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedBirdsEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedCrocodile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedCrocodileEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedMonkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedMonkeyEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Final Size %281190 x 100 px%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalDivingGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalKayakGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalLandActivities.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalwaterspaortsGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinalWaterSports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firedance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firedanceEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fivehouses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiveHousesEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gymEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interactSnowbi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interactSnowbiEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\island.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\islandEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\islandHoppingClip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\islandHoppingFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\islandHoppingFinalEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayakEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KayakingClip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayakingFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayakingFinalEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayakLandAct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayakLandActGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koiEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LActNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LandActActivitiesHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loriesEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loveBirds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loveBirdsEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniBar2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniBarEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minigolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minigolfEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniZoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniZoo2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiniZooEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkeyEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkeyEdit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newArchery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newArcheryEdit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newArcheryEdit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBiking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBikingEdit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBikingEdit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newGolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newGolfEdit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newGolfEdit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pigEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pingpong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pingpongEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playgroundEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pool1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pool1Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pool2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pool2Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pool3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pool3Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfileButtonWhite %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProfileButtonWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relaxanddiscover2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurant2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestaurantEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReviewsButtonBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReviewsButtonWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rooms2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomsEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sipaway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sipawayEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smallTreeLogoUpdates.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snakeEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorkeling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorklingClip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorklingEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorklingFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorklingFinalEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spa2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunConure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunConureEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turtleEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdatesButtonBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdatesButtonWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdatesHomeLongPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateSidePanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volleyball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volleyballEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WatchTower2EXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WatchTowerEXP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WatchTowerEXPnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waterReceipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waterSports1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WelcometoWhisperingPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whisperingLogoSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lastRooms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxPersonsPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pricePic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomDetailsPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoUpdatesPanel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contactPanel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diningDescription.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divingFinalReceipt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbInformation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbTop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tapal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2-transformed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backback-transformed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backy-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbProfilePicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhisperingLogoAnimation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pblefttt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbProfileInfoDisplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnProfileMyprofile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnProfileTransaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnProfileLogout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnProfileMyprofileBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnProfileTransactionBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnProfileLogoutBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbProfileInformation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbChangePasswordForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbEditInfoForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalInternational.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalPizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalDesserts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalSizzlers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalSpecials.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalCocktailsBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalFishBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalPorkBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalSnacksBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalPlatterBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalPbDiningLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbProfileIconTransparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbActivitiesLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbExperienceLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbLandActivitiesLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbMinizooLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbRoomsLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbWatersportsLayout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pbProfileIconTransparent1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiveBookBtn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiveBookBtnHover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodBookBtn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodBookBtnHover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomBookBtn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomBookBtnHover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TransactionBtn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TransactionBtnHover1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
